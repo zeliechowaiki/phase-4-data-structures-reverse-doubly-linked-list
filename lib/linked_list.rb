@@ -9,7 +9,7 @@ class LinkedList
     @length = 0
   end
 
-  def reverse(n)
+  def reverse(head)
     # your code here
   end
 
