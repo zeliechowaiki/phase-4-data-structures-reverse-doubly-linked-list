@@ -9,8 +9,18 @@ class LinkedList
     @length = 0
   end
 
-  def reverse(n)
-    # your code here
-  end
+  def reverse(head)
+    return head if head.length < 2
 
+    current = head 
+    new_head = nil
+
+    while(current != nil)
+      new_head = current.prev_node
+      current.prev_node = current.next_node 
+      current.next_node = new_head
+      current = current.prev_node 
+    end
+    new_head.prev_node
+  end
 end

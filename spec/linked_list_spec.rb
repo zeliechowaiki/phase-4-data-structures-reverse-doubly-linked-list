@@ -10,18 +10,18 @@ describe LinkedList do
   end
 
   describe "#reverse" do
-    it "returns the reversed linked list" do
-   
-    end
 
     it "returns the original head if length < 2" do
       
     end
 
-
-    it "returns nil if the list is empty" do
-      empty_list = LinkedList.new
-      expect(empty_list.reverse(1)).to eq(nil)
+    it "returns the reversed linked list" do
+   
     end
+
+    it "has all pointers pointing correctly" do
+      
+    end
+
   end
 end
